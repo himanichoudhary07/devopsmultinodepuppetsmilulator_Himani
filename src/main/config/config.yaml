@@ -1,0 +1,7 @@
+app:
+  name: Puppet Simulator
+nodes:
+  - node1
+  - node2
+  - node3
+  - node4

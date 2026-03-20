@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: puppet-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: puppet
+  template:
+    metadata:
+      labels:
+        app: puppet
+    spec:
+      containers:
+      - name: puppet
+        image: puppet
+        ports:
+        - containerPort: 8080

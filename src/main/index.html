@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Puppet Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .node {
+            width: 150px;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .Success {
+            background-color: lightgreen;
+        }
+
+        .Failed {
+            background-color: lightcoral;
+        }
+
+        .InProgress {
+            background-color: khaki;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Multi-Node Puppet Deployment Dashboard</h1>
+
+<button onclick="loadData()">Run Deployment</button>
+
+<div class="container" id="nodes"></div>
+
+<script>
+function loadData() {
+    fetch('/api/deploy')
+    .then(res => res.json())
+    .then(data => {
+        let output = "";
+
+        for (let node in data) {
+            let status = data[node];
+            let className = status.replace(" ", "");
+
+            output += `
+                <div class="node ${className}">
+                    <h3>${node}</h3>
+                    <p>${status}</p>
+                </div>
+            `;
+        }
+
+        document.getElementById("nodes").innerHTML = output;
+    });
+}
+</script>
+
+</body>
+</html>
