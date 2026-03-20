@@ -1,5 +1,14 @@
+# Use Python image
 FROM python:3.10
+
+# Set working directory
 WORKDIR /app
-COPY . .
+
+# Copy project files
+COPY ../../ /app
+
+# Install dependencies
 RUN pip install flask
+
+# Run app
 CMD ["python3", "src/main/app.py"]
