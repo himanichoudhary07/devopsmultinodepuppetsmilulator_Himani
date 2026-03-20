@@ -1,5 +1,4 @@
-from flask import render_template
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 import random
 
 app = Flask(__name__)
@@ -14,7 +13,7 @@ def simulate_puppet():
 
 @app.route("/")
 def home():
-    return open("src/main/index.html").read()
+    return render_template("index.html")
 
 @app.route("/api/deploy")
 def deploy():
