@@ -1,6 +1,6 @@
 # 🚀 Multi-Node Puppet Deployment Simulator
 
-![CI/CD](https://img.shields.io/badge/CI-CD-Pipeline-success-brightgreen)
+![CI/CD](https://github.com/himanichoudhary07/devopsmultinodepuppetsmilulator_Himani/actions/workflows/cicd.yml/badge.svg)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
 
 ---
