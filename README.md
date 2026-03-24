@@ -1,11 +1,11 @@
-# 🚀 Multi-Node Puppet Deployment Simulator
+# Multi-Node Puppet Deployment Simulator
 
 ![CI/CD](https://github.com/himanichoudhary07/devopsmultinodepuppetsmilulator_Himani/actions/workflows/cicd.yml/badge.svg)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
 
 ---
 
-## 👩‍💻 Student Details
+##  Student Details
 
 **Student Name:** Himani Choudhary  
 **Registration No.:** 23FE10CSE00827  
@@ -15,7 +15,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 The **Multi-Node Puppet Deployment Simulator** is a DevOps-based project that simulates configuration management and deployment across multiple nodes using a Puppet-like approach.
 
@@ -23,14 +23,14 @@ Instead of using real infrastructure, this project provides a lightweight simula
 
 ---
 
-## ❗ Problem Statement
+##  Problem Statement
 
 Managing deployments across multiple servers is complex and error-prone.  
 This project demonstrates how automation tools like Puppet can streamline deployment, improve consistency, and reduce manual intervention.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Simulate deployment across multiple nodes  
 - Visualize node status using a dashboard  
@@ -39,7 +39,7 @@ This project demonstrates how automation tools like Puppet can streamline deploy
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 - 📊 Interactive dashboard for node status visualization  
 - 🔄 Randomized deployment simulation  
